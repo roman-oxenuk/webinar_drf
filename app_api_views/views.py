@@ -13,9 +13,10 @@ from posts_models.models import Post
 from app_api_views.serializers import PostSerializer
 
 
+# Можно расскоментировать декоратор чтобы посмотреть,
+# как функция posts_list превратиться в объект ApiView
 # @api_view(['GET', 'POST'])
 def posts_list(request):
-    # print(type(request))
     if request.method == 'GET':
         posts_qs = Post.objects.all()
         serializer = PostSerializer(posts_qs, many=True)
