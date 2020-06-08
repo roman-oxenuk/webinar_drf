@@ -13,9 +13,9 @@ from posts_models.models import Post
 from app_api_views.serializers import PostSerializer
 
 
+# Можно это раскомментировать, чтобы посмотреть, как меняется объект posts_list
 # @api_view(['GET', 'POST'])
 def posts_list(request):
-    # print(type(request))
     if request.method == 'GET':
         posts_qs = Post.objects.all()
         serializer = PostSerializer(posts_qs, many=True)
