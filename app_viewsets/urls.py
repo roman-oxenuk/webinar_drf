@@ -13,7 +13,7 @@ urlpatterns = [
 ]
 
 
-# Пример использования роутеров
+# Пример использования роутера
 # from rest_framework.routers import DefaultRouter
 # router = DefaultRouter()
 # router.register('posts', views.PostsViewSet, basename='posts')
