@@ -19,6 +19,8 @@ class PostsViewSet(viewsets.ViewSet):
         return Response(serializer.data)
 
 
+# Пример применения ModelViewSet
+# С ним нам нужно написать меньше кода в сравнении с ViewSet
 # class PostsViewSet(viewsets.ModelViewSet):
 
 #     serializer_class = PostSerializer
